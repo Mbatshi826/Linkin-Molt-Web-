@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linkin Molt | Feedback</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Linkin Molt</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="feedback-container">
+            <h2>Your Feedback Matters</h2>
+            <p>We value your opinion. Please share your experience with us to help us improve our services.</p>
+            
+            <form class="feedback-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number (optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rating">How would you rate your experience?</label>
+                    <div class="rating-options">
+                        <input type="radio" id="excellent" name="rating" value="excellent">
+                        <label for="excellent">Excellent</label>
+                        
+                        <input type="radio" id="good" name="rating" value="good">
+                        <label for="good">Good</label>
+                        
+                        <input type="radio" id="average" name="rating" value="average">
+                        <label for="average">Average</label>
+                        
+                        <input type="radio" id="poor" name="rating" value="poor">
+                        <label for="poor">Poor</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-type">Type of Feedback:</label>
+                    <select id="feedback-type" name="feedback-type">
+                        <option value="compliment">Compliment</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="general">General Feedback</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Feedback:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Please share your detailed feedback here..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="contact-permission" name="contact-permission">
+                    <label for="contact-permission">I agree to be contacted for follow-up regarding my feedback</label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                    <button type="reset" class="reset-btn">Reset Form</button>
+                </div>
+            </form>
+        </main>
+        
+        <footer>
+            <p>&copy;2025 Linkin Molt pty(LTD). All rights reserved</p>
+        </footer>
+    </body>
+</html>
